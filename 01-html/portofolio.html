@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="portofolio.css" rel="stylesheet">
+    <title>Portofolio</title>
+</head>
+
+<body class="body">
+    
+    <!-- Navbar + button -->
+        <nav class="navbar navbar-expand-md navbar-light">
+            <div class="container-fluid p-3 mb-0 bg-dark">
+            <a href="#" class="navbar-brand text-white">Faizah Mp</a>
+            <button 
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#toggleMobileMenu"
+            aria-controls="toggleMobileMenu"
+            aria-expanded="false"
+            aria-lable="Toggle navigation"
+            >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="toggleMobileMenu">
+            <ul class="navbar-nav me-auto text-center ">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#profile">Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#project">Project</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    
+             <!-- Profile -->
+    <div class="center-justified white-box">
+            <h1 id="profile" class="text text-center">Profile</h1>
+            <img class="rounded-1 rounded mx-auto d-block image" src="jungwooyoungkqfellaz.png" alt="foto"><br>
+            <p class="center-justified">Assalamualaikum warrahmatullahi wabaraktuh. Nama saya Faizah Mappanyompa NIM H071201045. 
+            Pembuatan portofolio ini dibuat untuk memenuhi tugas 1 praktikum pemrograman web.
+            Saya akan mendeskripsikan singkat tentang saya sendiri. 
+            Saya lahir dan dibesarkan di Makkah, Saudi Arabia pada 7 Desember.
+            Sebagai <i>transferred student</i>, banyak hal yang mendorong saya untuk keluar dari 
+            zona nyaman, 
+            misalnya : adaptasi makanan, teman kelas, lingkungan, dan <i>culture shock </i>lainnya.
+            Sekian profile singkat yang dapat saya jelaskan. 
+            </p>
+    </div>
+    <br>
+
+<div class="center-justified white-box">
+        <h1 id="project" class="text text-center">Project</h1>
+        <br>
+    <!-- Button trigger modal -->
+        <button 
+            type="button" 
+            class="btn btn-dark center" 
+            data-bs-toggle="modal" 
+            data-bs-target="#modalproject">
+            Klik saya!
+            </button>
+  
+  <!-- Modal button -->
+        <div 
+            class="modal fade center " 
+            id="modalproject" 
+            tabindex="-1" 
+            aria-labelledby="modalproject" 
+            aria-hidden="true">
+        
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+
+                        <!-- Project-->
+                    <h5 class="modal-title" id="modalproject">Project</h5>
+                        <button 
+                        type="button" 
+                        class="btn-close" 
+                        data-bs-dismiss="modal" 
+                        aria-label="Close">
+                    </button>
+                </div>
+             <div class="modal-body">
+            Project yang terkait dengan perkuliahan belum pernah dilakukan.
+            </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Tutup</button>
+          <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Ok</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+<br>
+
+    <!-- Contact-->
+    <div class="center-justified white-box">
+    <form>
+        <h1  id="contact" class="text text-center">Contact</h1>
+        
+        <!-- nama -->
+        <label for="name" class="form-label">Full Name : </label>
+        <input type="text" placeholder="Enter your name" name="name" class="form-control"><br>
+        <!-- email-->
+        
+        <label for="email" class="email-label">Your Email : </label>
+        <input type="email" name="email" class="form-control" placeholder="Enter Your Email"><br>
+
+        <label for="number" id="number-label">Age : </label>
+        <input id="number" class="input" min="1" max="120" type="number" placeholder="Age"><br>
+        <br>
+        <label for="major" class="">Your Major </label>
+        <select id="dropdown" class="input" name="major"> <br>
+        <option disabled value="select">Select Your Major</option>
+        <option value="mtk">Mathematic</option>
+        <option value="cs">Computer Science</option>
+        <option value="ia">Actuarial</option></select>
+
+        <!-- radiobutton -->
+        <br><br>
+        <label for="form-check-label" class="form-check-label">Your Gender : </label><br>
+        <input class="form-check-label" value="1" type="radio" name="flexRadioDefault" id="flexRadioDefault1"><label class=" "> Male</label></input>
+        <input class="form-check-label" value="1" type="radio" name="flexRadioDefault" id="flexRadioDefault1"><label class=" "> Female</label></input>
+        <br><br>
+        <button type="submit" class="btn btn-dark">Register</button>
+        <br>
+
+        <!-- mre info--><div class="text-center">
+        <caption class="text-center">Connect with me!</caption><br><br>
+        <a class="navbar-brand" href="https://www.instagram.com/fz_mp/" target="_blank">
+            <img src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c521.png" alt="instagram" width="30" height="25">
+            @fz_mp
+        </a>
+        
+        <a class="navbar-brand" href="https://github.com/faizahmp/Praktikum-Pemrograman-Web" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" width="30" height="25">
+            Github
+        </a>
+        
+        <a class="navbar-brand" href="https://www.youtube.com/channel/UCZmvs4koqrQ_9i8kJX86qlA" target="_blank">
+            <img src="https://www.logo.wine/a/logo/YouTube/YouTube-Icon-Full-Color-Logo.wine.svg" width="30" height="25">
+            Faizah Mp
+        </a> 
+    </div>
+</form>
+</div>
+<br>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</body>
+</html>
