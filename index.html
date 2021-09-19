@@ -1,0 +1,286 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="01_css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="01_css/style.css">
+    <title>Portfolio</title>
+</head>
+
+<!-- body -->
+<body class="color1">
+    <!-- container of navbar + button -->
+    <div class="container-fluid p-3 mb-3 sticky-top color">
+    
+      <nav class="navbar navbar-expand-lg navbar-light ">
+        <a class="navbar-brand" href="#">
+          <img src="01_picture/ketnip.jpg" class="rounded-circle" alt="ketnipz" width="30" height="30">
+        </a>
+      <a href="#" class="navbar-brand text-white fw-bolder">Faizah Mp</a>
+      
+      <button 
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#toggleMobileMenu"
+      aria-controls="toggleMobileMenu"
+      aria-expanded="false"
+      aria-lable="Toggle navigation"
+      >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+<div class="collapse navbar-collapse" id="toggleMobileMenu">
+    <ul class="navbar-nav me-auto text-center ">
+        <li class="nav-item">
+            <a class="nav-link text-white" href="#profile">Profile</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-white" href="#project">Project</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-white" href="#contact">Contact</a>
+        </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+<!-- end navbar + button -->
+
+<!-- profile -->
+<section class="profile py-5">
+  <div class="container-lg" id="profile">
+
+    <div class="row justify-content-center">
+      <div class="col-lg-5">
+        <div class="section-title text-center">
+          <h2 class="mb-5 fw-bold">Welcome to my profile!</h2>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row min-vh-100 align-items-center align-content-center">
+      <div class="col-md-6 mt-4 mt-md-0">
+        <div class="profile-img text-center">
+          <img src="01_picture/ketnipz.gif" alt="profile" >
+        </div>
+      </div>
+      <div class="col-md-6 mt-5 mt-md-0 order-md-first">
+        <div class="profile-text">
+          <p class="text-muted mb-1">Assalamualaikum</p>
+          <h1 class="text-uppercase fw-bold fs-1">Faizah Mappanyompa</h1>
+          <h2 class="fs-4">Information System</h2>
+          <p class="text-muted">Pembuatan portofolio ini dibuat untuk memenuhi tugas 1 praktikum pemrograman web.
+            Saya akan mendeskripsikan singkat tentang saya sendiri. 
+            Saya lahir dan dibesarkan di Makkah, Saudi Arabia pada 7 Desember.
+            Sebagai <i>transferred student</i>, banyak hal yang mendorong saya untuk keluar dari 
+            zona nyaman, 
+            misalnya : adaptasi makanan, teman kelas, lingkungan, dan <i>culture shock </i>lainnya.
+            Sekian profile singkat yang dapat saya jelaskan. </p>
+        </div>
+
+        <!-- modal trigger-->
+        <button 
+            type="button" 
+            class="btn color center text-white" 
+            data-bs-toggle="modal" 
+            data-bs-target="#modalproject">
+            Contact me!
+            </button>
+  
+      <!-- Modal button -->
+        <div 
+            class="modal fade center " 
+            id="modalproject" 
+            tabindex="-1" 
+            aria-labelledby="modalproject" 
+            aria-hidden="true">      
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button 
+                        type="button" 
+                        class="btn-close" 
+                        data-bs-dismiss="modal" 
+                        aria-label="Close">
+                    </button>
+                </div>
+             <div class="modal-body">
+          I am sorry! Not available at the moment. Please try again next week~
+            </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Ok!</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end profile-->
+
+<!-- project-->
+<section class="portfolio color2 py-4" id="project">
+  <div class="container-lg py-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="section-title text-center">
+          <h2 class="mb-5 fw-bold">Project</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <!-- pic 1-->
+      <div class="col-md-6 col-lg-4">
+        <div class="portfolio-item">
+          <img src="01_picture/1.png"  class="w-100 img-thumbnail" alt="pic 1" width="20px">
+          <h3 class="text-capitalize fs-5 my-2">Beauty & Care</h3>
+          <p class="mb-4"><a href="#" class="text-decoration-none">Maskerin</a></p>
+        </div>
+      </div>
+
+      <!-- pic 2-->
+      <div class="col-md-6 col-lg-4">
+        <div class="portfolio-item">
+          <img src="01_picture/2.png"  class="w-100 img-thumbnail" alt="pic 1" width="20px">
+          <h3 class="text-capitalize fs-5 my-2">Food & Beverages</h3>
+          <p class="mb-4"><a href="#" class="text-decoration-none">Freshly Baked Pan</a></p>
+        </div>
+      </div>
+
+      <!-- pic 3-->
+      <div class="col-md-6 col-lg-4">
+        <div class="portfolio-item">
+          <img src="01_picture/3.png"  class="w-100 img-thumbnail" alt="pic 1" width="20px">
+          <h3 class="text-capitalize fs-5 my-2">Food & Beverages</h3>
+          <p class="mb-4"><a href="#" class="text-decoration-none">Bubble Tea</a></p>
+        </div>
+      </div>
+
+      <!-- pic 4-->
+      <div class="col-md-6 col-lg-4">
+        <div class="portfolio-item">
+          <img src="01_picture/4.png"  class="w-100 img-thumbnail" alt="pic 1" width="20px">
+          <h3 class="text-capitalize fs-5 my-2">Abstrack Art</h3>
+          <p class="mb-4"><a href="#" class="text-decoration-none">"Shall we take a stroll?"</a></p>
+        </div>
+      </div>
+
+      <!-- pic 5-->
+      <div class="col-md-6 col-lg-4">
+        <div class="portfolio-item">
+          <img src="01_picture/5.png"  class="w-100 img-thumbnail" alt="pic 1" width="20px">
+          <h3 class="text-capitalize fs-5 my-2">Food & Beverages</h3>
+          <p class="mb-4"><a href="#" class="text-decoration-none">Tokyo Rice Bowl</a></p>
+        </div>
+      </div>
+
+      <!-- pic 6-->
+      <div class="col-md-6 col-lg-4">
+        <div class="portfolio-item">
+          <img src="01_picture/6.png"  class="w-100 img-thumbnail" alt="pic 1" width="20px">
+          <h3 class="text-capitalize fs-5 my-2">Coffee Shop</h3>
+          <p class="mb-4"><a href="#" class="text-decoration-none">Luwak coffee</a></p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  </section>
+<!-- end project-->
+
+<!-- contact-->
+<section class="contact py-5 color3" id="contact">
+  <div class="container-lg py-4">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="section-title text-center">
+          <h2 class="mb-5 fw-bold">Connect With Me!</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-5">
+        <!-- email -->
+        <div class="contact-item d-flex mb-3">
+            <div class="text ms-3">
+                <h3 class="fs-5"><i class="bi bi-envelope"></i> Email</h3>
+                <p class="text-muted">youremail@email.com</p>
+            </div>
+          </div>
+          <!-- github -->
+          <div class="contact-item d-flex mb-3">
+            <div class="text ms-3">
+                <h3 class="fs-5"><i class="bi bi-github"></i> Github</h3>
+                <p class="text-muted">https://github.com/faizahmp</p>
+            </div>
+          </div>
+          <!-- linked in-->
+          <div class="contact-item d-flex mb-3">
+            <div class="text ms-3">
+                <h3 class="fs-5"><i class="bi bi-instagram"></i> Instagram</h3>
+                <p class="text-muted">@fz_mp</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-7">
+          <!-- form-->
+          <div class="contact-form">
+              <form>
+                <!-- row name and last name-->
+                <div class="row">
+                  <div class="col-lg-6 mb-3">
+                    <input type="text" placeholder="First name" class="form-control form-control-lg fs-6 border-0 shadow-sm ">
+                  </div>
+                  <div class="col-lg-6 mb-3">
+                    <input type="text" placeholder="Last name" class="form-control form-control-lg fs-6 border-0 shadow-sm">
+                  </div>
+                </div>
+                <!-- row email & textarea-->
+                <div class="row">
+                  <div class="col-lg-12 mb-3">
+                    <input type="email" placeholder="your@email.com" class="form-control form-control-lg fs-6 border-0 shadow-sm">
+                  </div>
+                  <div class="col-lg-12 mb-3">
+                    <textarea rows="4" placeholder="Send me a message!" class="form-control form-control-lg fs-6 border-0 shadow-sm"></textarea>
+                  </div>
+                </div>
+                <!-- submit button-->
+                <div class="row">
+                  <div class="col-lg-12">
+                    <input type="submit" class="btn color text-white"> 
+                  </div>
+                </div>
+              </form>
+          </div>
+          <!-- end form-->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end contact-->
+
+<!-- footer -->
+<footer class="footer border-top py-3 color ">
+  <div class="container-lg ">
+  <div class= row>
+    <div class=col-lg-12>
+      <p class="text-center text-white m-0"> &copy;fz_mp</p>
+    </div>
+  </div>
+</div>
+</footer>
+<!-- end footer-->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
+</html>
